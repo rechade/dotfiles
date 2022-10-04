@@ -1,0 +1,42 @@
+# theme = "base16_default_dark"
+theme = "base16_transparent"
+# theme = "base16_default_dark"
+# theme = "catppuccin_mocha_ul"
+#shift D to delete backwards in normal mode
+[editor]
+indent-guides.render = true
+indent-guides.character = '.'
+line-number = "relative"
+scroll-lines = 5
+auto-pairs = false
+
+[editor.cursor-shape]
+insert = "underline"
+normal = "block"
+select = "block"
+
+[editor.file-picker]
+hidden = false
+max-depth = 3
+
+[editor.lsp]
+display-messages = true
+
+[keys.normal]
+g = { a = "code_action" } # Maps `ga` to show possible code actions
+"ret" = ["move_line_down", "goto_first_nonwhitespace"] # Maps the enter key to open_below then re-enter normal mode
+X = "extend_line_above"
+"{" = ["goto_prev_paragraph", "collapse_selection"]
+"}" = ["goto_next_paragraph", "collapse_selection"]
+D = "delete_char_backward"
+
+[keys.insert]
+j = { k = "normal_mode" } # Maps `jk` to exit insert mode
+# Move cursor in insert mode
+A-h = "move_char_left"
+A-j = "move_line_down"
+A-k = "move_line_up"
+A-l = "move_char_right"
+A-o = "open_below"
+A-O = "open_above"
+C-l = "delete_char_forward"

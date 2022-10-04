@@ -1,0 +1,2 @@
+#!/bin/zsh
+xrandr --output DP-0 --size 1920x1080 --rotate right --pos 0x0 --output HDMI-0 --primary --pos 1080x0 --size 1920x1080 --rotate normal

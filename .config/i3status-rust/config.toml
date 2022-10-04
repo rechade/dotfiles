@@ -1,0 +1,35 @@
+[[block]]
+block = "net"
+format = "{$speed_up}{$speed_down}"
+[[block]]
+block = "net"
+format = "{$ip}"
+# [[block]]
+# block = "bluetooth"
+# mac = "74:45:CE:01:BC:4B"
+# [[block.click]]
+# button = "left"
+# cmd = "blueman-manager"
+[[block]]
+block = "cpu"
+[[block]]
+block = "disk_space"
+[[block]]
+block = "memory"
+display_type = "memory"
+format_mem = "$mem_total_used_percents.eng(2)"
+format_swap = "$swap_used_percents.eng(2)"
+[[block]]
+block = "sound"
+[[block.click]]
+button = "left"
+cmd = "pavucontrol"
+[[block]]
+block = "time"
+interval = 5
+format = "%a %Y%m%d %R"
+[[block.click]]
+button = "left"
+cmd = "yad --calendar"
+[block.icons_overrides]
+time = ""

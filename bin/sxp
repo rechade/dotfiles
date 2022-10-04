@@ -1,0 +1,4 @@
+#!/bin/bash
+source ~/.xprofile
+sleep 2
+nitrogen --restore
